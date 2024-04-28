@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    max-width: 100%;
+}
+.main{
+    background-image: url("assets/image/home-page.jpg");
+    background-position: center center;
+    background-size:max(1000px, 100vw) ;
+    background-repeat: no-repeat;
+    height:70vh;
+    position: relative;
+}
+
+/*  ======================= 1st ================= */
+nav{
+    max-width: 55vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    position: relative;
+    z-index: 10;
+    width: 170px;
+}
+/*  ============================= 2nd ========================= */
+.main .box{
+    height: 61vh;
+    width: 100%;
+    opacity: 0.54;
+    background-color: black;
+    position: absolute;
+}
+
+.hero{
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+.hero>  :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn{
+    padding: 3px 8xp;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(75, 71, 71, 0.574);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+.btn-red-sm{
+    background-color: red;  
+    color: white;
+}
+.main input{
+    padding: 10px 20px;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: rgba(23,23,23,0.55);
+}
+
+.separation{
+    height: 7px;
+    background-color: gray;
+}
+/* =============================== 3rd =============================== */
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 71vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width : 1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+.secimg video{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 360px;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+section.first> div :nth-child(1){
+    font-size: 40px;
+    font-weight: bolder;
+}
+section.first> div :nth-child(2){
+    font-size: 20px;
+}
+
+/* ========================================================== */
+
+.faq{
+    background-color: black;
+    color:white;
+    padding: 34px;
+}
+.faq h2{
+    text-align: center;
+    font-size: 40px;
+}
+.faqbox{
+    transition: all 1s ease-out;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 60vw;
+    font-size: 20px;
+    margin:  30px auto;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: rgb(48, 46, 46);
+}
+.tyagi{
+    text-align: center;
+}
+.tyagi h4{
+    padding-bottom: 18px;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .question{
+
+padding: 34px;    /* margin: 2px 15vw;
+    text-align: center; */
+}
